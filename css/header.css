@@ -1,0 +1,115 @@
+
+.header {
+    position: relative;
+    padding-block: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    text-transform: uppercase;
+    font: var(--h3);
+    color: var(--green-dark);
+}
+
+.header__btn-menu {
+    border: none;
+    background-color: #FFF;
+    border-radius: 0.4rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.header__btn-menu:active{
+    transform: scale(0.95);
+}
+
+.header__btn-cerrar {
+    align-self: flex-end;
+}
+
+.header__nav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 99;
+    background: var(--green-ligth);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.header__nav-container.show-menu{
+    transform: translateX(0);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.nav__link {
+    color: var(--blue-dark);
+    font: var(--body-p1-regular);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.nav__link:hover {
+    background-color: #FFF;
+}
+
+@media (min-width: 768px){
+    .header__nav-container{
+        right: 50%;
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 992px){
+    .header__nav-container{
+        transform: unset;
+        background: none;
+        box-shadow: none;
+        position: static;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__btn-menu {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 1rem;
+           
+    }
+
+    .header .button-primary {
+        width: auto;
+        padding-inline: 2rem;
+    }
+
+    .nav__link {
+        font: var(--body-p2-regular);
+        padding-inline: 1rem;
+    }
+}

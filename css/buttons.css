@@ -1,0 +1,19 @@
+
+
+.button {
+    width: 100%;
+    padding: 0.5em 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    font: var(--body-p1-bold);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--primary);
+}
+.button-secondary {
+    background-color: var(--white);
+    color: var(--blue-dark);
+}

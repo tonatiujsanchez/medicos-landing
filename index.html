@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Landing page de médicos</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper header-content">
+            <a href="#" class="header__logo">LOGO</a>
+            <div id="menu-container" class="header__nav-container">
+                <button id="btn-closed-menu" class="header__btn-menu header__btn-cerrar">
+                    <img src="./icons/x.svg" alt="Icono de cerrar">
+                </button>
+                <nav class="nav">
+                    <a href="#" class="nav__link">Especialistas</a>
+                    <a href="#" class="nav__link">Estudios</a>
+                    <a href="#" class="nav__link">Preguntas frecuentes</a>
+                </nav>
+                <button class="button button-primary">Iniciar sesión</button>
+            </div>
+            <button id="btn-menu" class="header__btn-menu">
+                <img src="./icons/Menu.svg" alt="Icono de menu">
+            </button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="wrapper hero__content">
+            <div class="hero__desc">
+                <h1 class="hero__desc-title">Encuentra tu especialista y pide cita</h1>
+                <p class="hero__desc-text">180 000 profesionales están aqui para ayudarte</p>
+                <button class="button button-primary">Ver especialistas</button>
+            </div>
+            <div class="hero__img-container">
+                <div class="hero__img-content">
+                    <figure class="hero__figure">
+                        <img 
+                            src="./images/Img-doctors-1.png" 
+                            alt="Fotografia de doctor"
+                        >
+                    </figure>
+                    <img 
+                        src="./icons/add.svg" 
+                        alt="Icono de plus"
+                        class="hero__icon icon-add"
+                    >
+                    <img 
+                        src="./icons/disability.svg" 
+                        alt="Icono de silla de reudas"
+                        class="hero__icon icon-disability"
+                    >
+                    <img 
+                        src="./icons/drug.svg" 
+                        alt="Icono de pildoras"
+                        class="hero__icon icon-drug"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="diagnoses">
+        <div class="wrapper diagnoses-content">
+            <div class="diagnoses__desc">
+                <h2 class="diagnoses__desc-title">Encuentra un centro de diagnóstico y agenda tu cita</h2>
+                <p class="diagnoses__desc-text">Compara los precios del estudio en diferentes centros de diagnóstico</p>
+                <ul class="diagnoses__desc-list">
+                    <li class="diagnoses__desc-item">
+                        <img class="diagnoses__desc-item__img" src="./icons/shield.svg" alt="Icono de escudo de protección">
+                        <span class="diagnoses__desc-item__title">Protegemos tu salud</span>
+                    </li>
+                    <li class="diagnoses__desc-item">
+                        <img class="diagnoses__desc-item__img" src="./icons/covid.svg" alt="Icono de covid">
+                        <span class="diagnoses__desc-item__title">Pruebas de Covid-19</span>
+                    </li>
+                    <li class="diagnoses__desc-item">
+                        <img class="diagnoses__desc-item__img" src="./icons/hospital.svg" alt="Icono de hospital">
+                        <span class="diagnoses__desc-item__title">Un centro cerca de ti</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="diagnoses__img-container">
+                <figure class="diagnoses__figure">
+                    <img class="diagnoses__figure-img" src="./images/Img-doctors-2.png" alt="Fotografia de doctores">
+                    <div class="diagnoses__figure-img__gradient"></div>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="studies">
+        <div class="studies-content wrapper">
+            <div class="studies__desc">
+                <h2 class="studies__desc-title">Información necesaria sobre el estudio en un solo lugar</h2>
+                <ul class="studies__desc-list">
+                    <li class="studies__desc-item">
+                        <img class="studies__desc-item__icon" src="./icons/check.svg" alt="Icono de check">
+                        <span class="studies__desc-item__title">Procedimiento del estudio</span>
+                    </li>
+                    <li class="studies__desc-item">
+                        <img class="studies__desc-item__icon" src="./icons/check.svg" alt="Icono de check">
+                        <span class="studies__desc-item__title">Preguntas frecuentes</span>
+                    </li>
+                    <li class="studies__desc-item">
+                        <img class="studies__desc-item__icon" src="./icons/check.svg" alt="Icono de check">
+                        <span class="studies__desc-item__title">Recomendacionsobre cómo prepararse para un estudio</span>
+                    </li>
+                </ul>
+                <button class="button button-primary">
+                    Leer más sobre los estudios
+                </button>
+            </div>
+        </div>
+        <div class="studies__img-container">
+            <figure class="studies__figure">
+                <img 
+                    class="studies__figure-img" 
+                    src="./images/Img-doctors-3.png" 
+                    alt="Fotografia de doctores"
+                >
+                <div class="studies__figure-img__gradient-content">
+                    <div class="studies__figure-img__gradient"></div>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <section class="testimonies">
+        <div class="testimonies-container wrapper">
+            <div class="testimonies-content">
+
+                <h2 class="testimonies-title">Opiniones más recientes</h2>
+                <div class="testimonies__slides-container">
+                    <div class="testimony">
+                        <p class="testimony__text">Excelente trato y atención. Además de explicar todo de forma detallada. Muy profesional en todos los sentidos.</p>
+                        <div class="testimony__client">
+                            <p class="testimony__client-name">Marillyn Chacón León</p>
+                            <p class="testimony__client-type">Paciente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dottedes-content">
+                    <span class="dotted__item dotted-active"></span>
+                    <span class="dotted__item"></span>
+                    <span class="dotted__item"></span>
+                    <span class="dotted__item"></span>
+                    <span class="dotted__item"></span>
+                </div>
+            </div>
+            <div class="ellipse-one">
+                <div class="ellipse-two">
+                    <div class="ellipse-three"></div>
+                </div>
+            </div>
+            <img class="testimony__img testimony__img-one" src="./images/Img-opinions-1.png" alt="Foto del cliente">
+            <img class="testimony__img testimony__img-two" src="./images/Img-opinions-2.png" alt="Foto del cliente">
+            <img class="testimony__img testimony__img-three" src="./images/Img-opinions-3.png" alt="Foto del cliente">
+            <img class="testimony__img testimony__img-four" src="./images/Img-opinions-4.png" alt="Foto del cliente">
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-container wrapper">
+            <h2 class="cta__title">¿Tuviste COVID y aún presentas síntomas?</h2>
+            <p class="cta__text">Revisa el estado de tus pulmones con una tomografía de tórax.</p>
+            <button class="button button-secondary">Agenda una TAC de tórax</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container wrapper">
+            <div class="footer__social">
+                <a href="#" class="footer__logo">LOGO</a>
+                <div class="footer__social-list">
+                    <a href="#" class="footer__social-item">
+                        <img src="./icons/facebook.svg" alt="Icono de facebook">
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <img src="./icons/twitter.svg" alt="Icono de twitter">
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <img src="./icons/instagram.svg" alt="Icono de instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__section">
+                <p class="footer__section-title">Menu</p>
+                <nav class="footer__section-list">
+                    <a href="#" class="footer__section-item">Cita</a>
+                    <a href="#" class="footer__section-item">Doctor</a>
+                    <a href="#" class="footer__section-item">Covid-19</a>
+                    <a href="#" class="footer__section-item">Consulta</a>
+                </nav>
+            </div>
+            <div class="footer__section">
+                <p class="footer__section-title">Legal</p>
+                <div class="footer__section-list">
+                    <a href="#" class="footer__section-item">Política de Privacidad</a>
+                    <a href="#" class="footer__section-item">Términos de servicio</a>
+                    <a href="#" class="footer__section-item">FAQ</a>
+                </div>
+            </div>
+            <div class="footer__section">
+                <p class="footer__section-title">Sobre nosotros</p>
+                <div class="footer__section-list">
+                    <a href="#" class="footer__section-item">Testimonios</a>
+                    <a href="#" class="footer__section-item">Nuestra gestión</a>
+                    <a href="#" class="footer__section-item">Nuestra historia</a>
+                    <a href="#" class="footer__section-item">Carrera</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.diagnoses {
+    padding-block: 2rem;
+}
+
+.diagnoses-content {
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.diagnoses__desc-title{
+    font: var(--h4);
+    line-height: 1.5;
+}
+
+.diagnoses__desc-text {
+    font: var(--body-p2-regular);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.diagnoses__desc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.diagnoses__desc-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.diagnoses__desc-item__img {
+    width: 3.5rem;
+}
+
+.diagnoses__desc-item__title {
+    font: var(--body-p2-regular);
+}
+
+.diagnoses__img-container {
+    padding: 1rem;
+}
+
+.diagnoses__figure {
+    margin: 0;
+    max-width: 100%;
+    border-radius: 1rem 1rem 50% 50%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid 0.5rem var(--green-ligth);   
+}
+
+.diagnoses__figure-img {
+    padding-inline-start: 1.5rem;
+    overflow: hidden;
+}
+
+.diagnoses__figure-img__gradient {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 2rem;
+    bottom: 0.2rem;
+    z-index: -1;
+    border-radius: 1rem 1rem 50% 50%;
+    border: solid 0.5rem var(--green-ligth);
+    background: linear-gradient(45deg, #25BAD8 0%, var(--primary) 70% );
+}
+
+@media (min-width: 768px){
+    .diagnoses {
+        margin-block: 5rem;
+    }
+
+    .diagnoses-content {
+        flex-direction: row;
+    }
+
+    .diagnoses__desc {
+        order: 2;
+        width: 50%;
+    }
+
+    .diagnoses__desc-title {
+        font: var(--h3);
+        line-height: 1.3;
+    }
+    
+    .diagnoses__img-container {
+        order: 1;
+    }
+}
+
+@media (min-width: 992px){
+
+    .diagnoses {
+        margin-block: 10rem;
+    }
+
+    .diagnoses__desc {
+        padding-inline: 3rem;
+    }
+    
+    .diagnoses__desc-title {
+        font: var(--h2);
+        line-height: 3.3rem;
+        margin-block-end: 1rem;
+    }
+
+    .diagnoses__desc-text {
+        font: var(--body-p1-regular);
+        margin-block-end: 3rem;
+    }
+
+    .diagnoses__desc-item__title {
+        font: var(--body-p1-regular);
+    }
+    
+}

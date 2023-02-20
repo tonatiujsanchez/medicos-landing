@@ -1,0 +1,84 @@
+@import url(./buttons.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./diagnoses.css);
+@import url(./studies.css);
+@import url(./testimonies.css);
+@import url(./cta.css);
+@import url(./footer.css);
+
+:root { 
+  --white: #f0f4f7; 
+  --grey: #445264; 
+  --primary: #58c0a6; 
+  --green-dark: #04503d; 
+  --blue-dark: #222e55; 
+  --grey-ligth: #e4e4e4; 
+  --green-ligth: #e9f7fc; 
+  --h1: 800 4rem/5rem 'Plus Jakarta Sans'; 
+  --h2: 700 2.5rem/4rem 'Plus Jakarta Sans'; 
+  --h3: 800 1.75rem/3.5rem 'Plus Jakarta Sans'; 
+  --h4: 700 1.125rem/3rem 'Plus Jakarta Sans'; 
+  --body-p1-regular: 400 1.25rem/2rem 'Plus Jakarta Sans'; 
+  --body-p1-bold: 700 1.25rem/2rem 'Plus Jakarta Sans'; 
+  --body-p2-regular: 400 0.875rem/2.5rem 'Plus Jakarta Sans'; 
+  --body-p2-bold: 700 0.875rem/2.5rem 'Plus Jakarta Sans'; 
+  --body-p3-regular: 400 0.75rem/2.5rem 'Plus Jakarta Sans';
+  
+  --gradient: linear-gradient(135deg, var(--white), 0%, var(--white) 100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gradient);
+  font: var(--body-p1-regular);
+  margin: 0;
+}
+
+h1 {
+  color: var(--blue-dark);
+  font: var(--h1);
+}
+
+h2 {
+  color: var(--blue-dark);
+  font: var(--h2);
+}
+
+p {
+  color: var(--grey);
+  font: var(--body-p1-regular);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-inline-size: 1158px;
+  padding-inline-start: 1.4rem;
+  padding-inline-end: 1.4rem;
+  margin: auto;
+}
